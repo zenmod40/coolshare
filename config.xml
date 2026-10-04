@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>coolshare</name>
+    <displayName><![CDATA[CoolShare]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Balises de partage pour Facebook, LinkedIn, WhatsApp et X : un seul jeu de balises propre sur chaque page, une image au bon format, et un contrôle de qualité.]]></description>
+    <author><![CDATA[ZM40]]></author>
+    <tab><![CDATA[seo]]></tab>
+    <confirmUninstall><![CDATA[Les titres, descriptions et images de partage saisis seront supprimés. Continuer ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
