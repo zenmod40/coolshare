@@ -7,6 +7,8 @@
 ![PrestaShop 8 → 9](https://img.shields.io/badge/PrestaShop-8%20%E2%86%92%209-blue) [![Version](https://img.shields.io/github/v/release/zenmod40/coolshare)](https://github.com/zenmod40/coolshare/releases/latest)
 ![License: OSL 3.0](https://img.shields.io/badge/License-OSL--3.0-blue)
 
+![CoolShare — le bloc Partage de la fiche produit et l'aperçu de la carte](https://zm40.com/assets/img/coolshare/fiche-produit.webp)
+
 ## Le problème
 
 Les thèmes PrestaShop écrivent quelques balises de partage, mais rarement toutes : souvent pas d'image en dehors des fiches produit (la carte partagée reste vide), pas de carte X, une description vide sur l'accueil. Et un module qui en ajoute par-dessus crée des doublons : les réseaux prennent alors la première balise venue.
@@ -44,7 +46,7 @@ Le remplacement des balises passe par le crochet `actionOutputHTMLBefore`, qu'un
 
 ## Installation
 
-1. Télécharger la dernière release (`coolshare.zip`).
+1. Télécharger la dernière release (`coolshare_vX.Y.Z.zip`, dans les *Assets*).
 2. Back-office PrestaShop → **Modules** → **Téléverser un module**.
 3. Installer, puis ouvrir la configuration de **CoolShare**.
 
@@ -55,6 +57,8 @@ Les images de partage sont rangées dans `img/coolshare/`, hors du dossier du mo
 - **Réglages** : activation, mode (remplacer ou compléter), compte X de la boutique, image par défaut.
 - **Page d'accueil** : titre, description et image de partage (l'accueil n'a pas de formulaire à lui dans PrestaShop).
 - **Contrôle** : la liste des pages à corriger, filtrable par type de page et par problème.
+
+![CoolShare — le contrôle des pages à corriger](https://zm40.com/assets/img/coolshare/controle.webp)
 
 ## Pour les développeurs
 
