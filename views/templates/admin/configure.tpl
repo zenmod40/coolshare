@@ -149,8 +149,8 @@
 
 {* ===== Onglet 4 : ÉCOSYSTÈME ZM40 ===== *}
 <div class="zm40-tab-content" data-content="ecosystem">
-    {$cs_form_ecosystem nofilter}
     {include file="module:coolshare/views/templates/admin/_partials/zm40_modules.tpl"}
+    {$cs_form_ecosystem nofilter}
 </div>
 
 {include file="module:coolshare/views/templates/admin/_partials/zm40_panel.tpl"}

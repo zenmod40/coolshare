@@ -63,7 +63,7 @@ class CoolShare extends Module
     {
         $this->name = 'coolshare';
         $this->tab = 'seo';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'ZM40';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -754,8 +754,8 @@ class CoolShare extends Module
             'legend' => ['title' => $this->l('Mises à jour et modules ZM40'), 'icon' => 'icon-globe'],
             'input' => [[
                 'type' => 'switch', 'name' => 'ZM40_NET_ENABLED', 'is_bool' => true, 'values' => $oui,
-                'label' => $this->l('Vérifier les mises à jour et afficher les autres modules ZM40'),
-                'desc' => $this->l('Une fois par jour au plus, une requête anonyme vers GitHub (version) et zm40.com (liste des modules). Aucune donnée de la boutique n\'est transmise.'),
+                'label' => $this->l('Vérifier les mises à jour et actualiser la liste des modules ZM40'),
+                'desc' => $this->l('Une fois par jour au plus, une requête anonyme vers GitHub (version) et zm40.com (liste des modules). Désactivé, la liste reste affichée telle quelle. Aucune donnée de la boutique n\'est transmise.'),
             ]],
             'submit' => ['title' => $this->l('Enregistrer'), 'name' => 'submitCoolShareNet'],
         ]]], ['ZM40_NET_ENABLED' => Zm40CommonCsh::isNetEnabled() ? 1 : 0], 'submitCoolShareNet');
