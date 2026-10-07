@@ -27,7 +27,7 @@
     <li class="is-active" data-tab="config"><i class="icon icon-cogs"></i>{l s='Configuration' mod='coolshare'}</li>
     <li data-tab="audit"><i class="icon icon-check-square-o"></i>{l s='Contrôle' mod='coolshare'}{if $cs_audit.total} <span class="badge">{$cs_audit.total|intval}</span>{/if}</li>
     <li data-tab="guide"><i class="icon icon-book"></i>{l s='Guide' mod='coolshare'}</li>
-    <li data-tab="ecosystem"><i class="icon icon-globe"></i>{l s='Écosystème ZM40' mod='coolshare'}</li>
+    <li data-tab="ecosystem"><i class="icon icon-th-large"></i>{l s='Modules ZM40' mod='coolshare'}</li>
 </ul>
 
 {* ===== Onglet 1 : CONFIGURATION ===== *}
@@ -147,9 +147,10 @@
     </div>
 </div>
 
-{* ===== Onglet 4 : ÉCOSYSTÈME ZM40 ===== *}
+{* ===== Onglet 4 : MODULES ZM40 ===== *}
 <div class="zm40-tab-content" data-content="ecosystem">
     {include file="module:coolshare/views/templates/admin/_partials/zm40_modules.tpl"}
+    {if !isset($zm40_modules) || !$zm40_modules|@count}<div class="panel"><p style="margin:0">{l s='Aucun module à afficher pour le moment.' mod='coolshare'}</p></div>{/if}
     {$cs_form_ecosystem nofilter}
 </div>
 
